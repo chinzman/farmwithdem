@@ -1,0 +1,17 @@
+# Production secrets
+app/.env
+
+# Resolved Compose config may contain environment secrets
+docker-compose-resolved.yml
+
+# Database dump
+database.sql
+
+# TLS private keys/certificates
+letsencrypt.tar.gz
+
+# Git
+.git/
+
+# Temporary files
+*.log

@@ -1,0 +1,31 @@
+FarmWith Backup
+===============
+
+Backup Date:
+20261002_191200
+
+Application Directory:
+/opt/farmwith
+
+Database:
+farmwith
+
+Database User:
+farmwith
+
+Docker Compose Services:
+db
+backend
+frontend
+
+Docker Containers:
+NAME                  IMAGE                COMMAND                  SERVICE    CREATED        STATUS                  PORTS
+farmwith-backend-1    farmwith-backend     "uvicorn app.main:ap…"   backend    4 weeks ago    Up 4 weeks              127.0.0.1:8001->8001/tcp
+farmwith-db-1         postgres:15-alpine   "docker-entrypoint.s…"   db         3 months ago   Up 3 months (healthy)   5432/tcp
+farmwith-frontend-1   farmwith-frontend    "docker-entrypoint.s…"   frontend   4 weeks ago    Up 4 weeks              127.0.0.1:5173->5173/tcp
+
+Hostname:
+ip-172-31-12-18
+
+Kernel:
+Linux ip-172-31-12-18 7.0.0-1006-aws #6-Ubuntu SMP PREEMPT Tue May 26 12:04:34 UTC 2026 x86_64 GNU/Linux
